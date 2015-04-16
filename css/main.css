@@ -1,0 +1,249 @@
+@font-face{
+	font-family: 'Open Sans', sans-serif;
+	src:url("https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans");
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
+
+}
+
+*{
+	left: 25%;
+}
+.navigation{
+	width: 100%;
+}
+.navigation li {
+	position: relative;
+	display: inline-block;
+	padding: 6px;
+}
+.navigation a:hover {
+  text-decoration: underline;
+}
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation li a {
+  color: #333;
+}
+.navigation li > ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+}
+.navigation ul > li {
+  float: left;
+  padding: 10px;
+}
+
+.navigation li:hover > ul {
+  display: block;
+  font-style: italic;
+  background-color: white;
+  position: absolute;
+  left:0;
+  z-index: 1;
+}
+
+.navigation li > ul > li {
+  float: none;
+  display: block;
+}
+.navigation span{
+	float: right;
+	padding-right: 10%;
+}
+
+#logo:before{
+	content: url("../img/comverse-logo.png");
+
+}
+.intro {
+	background-image: url("../img/slide-bg-complexity.jpg");
+	background-attachment: fixed;
+	height: 400px;
+	width: 100%;
+}
+
+span {
+	color: white;
+	height: 300px;
+	text-align: center;
+}
+.intro span{
+	text-align: left;
+	position: relative;
+	left:25%;
+}
+.intro li {
+	background-color: #FF00FF;
+	display: inline-block;
+	width: 200px;
+	height: 120px;
+	position: relative;
+	opacity: 0.75;
+	top: 150px;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.intro li+li {
+	background-color: #00FF00;
+}
+.intro li+li+li {
+	background-color: orange;
+}
+
+.services {
+	background-color: #0099FF;
+	width: 100%;
+	height: 250px;
+}
+
+.services li{
+	display: inline-block;
+	width: 150px;
+	position: relative;
+	left:15%;
+}
+.services a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+.services a:before{
+	content: url("../img/solution_icon_smart-money.png");
+
+}
+.services a:hover:before{
+	content: url("../img/solution_icon_smart-money_hover.png");
+}
+
+
+section a{
+	position: relative;
+}
+
+.events {
+	background-image: url("../img/news-and-events-bg.jpg");
+	background-attachment: fixed;
+	height: 300px;
+	width: 100%;
+
+}
+
+.events li {
+	position: relative;
+	width: 250px;
+	display: inline-block;
+}
+.events p{
+	color: black;
+	display: inline-block;
+	background-color: white;
+	width: 200px;
+	opacity: 0.5;
+	padding: 20px;
+	border-radius: 20px;
+}
+.events a{
+	display: inline-block;
+	color: white;
+}
+
+.stories {
+	background-color: #E0E0E0 ;
+	width: 100%;
+	height: 350px;
+}
+
+.stories li{
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	background-color: white;
+	border-radius: 20px;
+	padding: 20px;
+	transition: width 2s linear,background-color 2s linear,color 3s linear;
+}
+.stories li:hover{
+	width: 400px;
+	background-color: #0099FF;
+	color: white;
+}
+q:hover:before{
+	content:url("../img/quote-blue.png")
+}
+q:before{
+	content:url("../img/quote-grey.png")
+}
+q{
+	display: block;
+	margin-bottom: 40px;
+	transition: content 2s linear;
+}
+
+.latest {
+	float: right;
+	padding: 20px;
+	background-color: #A8A8A8 ;
+	width: 300px;
+	height: 300px;
+}
+
+.latest h4{
+	color: blue;
+}
+.latest button{
+	left:0px;
+}
+.map {
+	color: white;
+	background-color: #303030;
+	background-attachment: fixed;
+	width: 100%;
+
+}
+.map a {
+	color:white;
+}
+.map li{
+	display: inline-block;
+	float: left;
+	width: 260px;
+}
+.map ul{
+	margin-left: 70px;
+	height: 300px;	
+}
+.map span{
+	display: inline-block;
+	height: 0;
+	margin-left: 20px;
+}
+
+button {
+	color: white;
+	border-style: none;
+	background: #0066CC;
+	padding: 5px;
+	border-radius: 5px;
+	position: relative;
+	font-size: 16px;
+	left: 40%;
+}
+button:hover{
+	background-color: blue;
+}
+input{
+	border-radius: 7px;
+	height: 25px;
+	border-style: none;
+}
